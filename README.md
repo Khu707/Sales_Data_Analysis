@@ -1,2 +1,21 @@
-# Sales_Data_Analysis
- Sales Data Analysis Using Python Tools: Python, Pandas, Matplotlib- Analyzed 10,000+ rows of retail sales data to find key business insights - Performed data cleaning:  top 5 products, monthly trends using groupby and filters - Created 3 visualizations: Bar, Line, Pie charts for management reporting Dataset: Kaggle Superstore Sales
+# 📊 Sales Data Analysis – Python Project
+
+## Overview
+Analyzed 10,000+ rows of Kaggle Superstore retail data using Python
+to uncover business insights on product performance and revenue trends.
+
+## Tools Used
+Python, Pandas, Matplotlib
+
+## Key Findings
+- Top 5 best-selling products identified
+- Monthly revenue trends visualized
+- Category-wise sales distribution analyzed
+
+## Visualizations
+![Bar Chart](barchart.png)
+![Line Chart](linechart.png)
+![Pie Chart](piechart.png)
+
+## Dataset
+Kaggle Superstore Sales Dataset
