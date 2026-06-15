@@ -7,7 +7,7 @@ import seaborn as sns
 # print("Libraries imported successfully")
 
 
-df = pd.read_csv('Sample-Superstore.csv', encoding='latin1')
+df = pd.read_csv('Sample-Superstore.csv')
 df.head()
 
 
@@ -46,27 +46,27 @@ df.head()
 
 
 # 2 nd bar chart
-# top_products=df.groupby("Segment")["Profit"].sum().sort_values(ascending=False)
-# plt.figure(figsize=(7,5))
-# top_products.plot(kind='bar', color='green')
-# plt.title('Top Products - Analysis')
-# plt.ylabel('Profit')
-# plt.tight_layout()
-# plt.show()
-
-
-#2 Line Chart
-State_quantity = df.groupby('State')['Quantity'].sum().sort_values(ascending=False)
-plt.figure(figsize=(10,5))
-State_quantity.plot(kind='line', marker='o', color='green')
-plt.title('State-wise Quantity Distribution - Analysis')
-plt.ylabel('Quantity')
-plt.grid(True)
+top_products=df.groupby("Segment")["Profit"].sum().sort_values(ascending=False)
+plt.figure(figsize=(7,5))
+top_products.plot(kind='bar', color='green')
+plt.title('Top Products - Analysis')
+plt.ylabel('Profit')
+plt.tight_layout()
 plt.show()
 
 
+#2 Line Chart
+# State_quantity = df.groupby('State')['Quantity'].sum().sort_values(ascending=False)
+# plt.figure(figsize=(10,5))
+# State_quantity.plot(kind='line', marker='o', color='green')
+# plt.title('State-wise Quantity Distribution - Analysis')
+# plt.ylabel('Quantity')
+# plt.grid(True)
+# plt.show()
 
-# # Chart 3: Pie Chart – Sales by Category
+
+
+# Chart 3: Pie Chart – Sales by Category    
 # category_sales = df.groupby('Category')['Sales'].sum()
 # plt.figure(figsize=(6,6))
 # category_sales.plot(kind='pie', autopct='%1.1f%%')
